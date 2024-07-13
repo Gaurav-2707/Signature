@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signature</title>
+    <link href="styles/home.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="block">
+                <p>Text Colour Picker</p>
+                <input class="form-control" type="color" id="colorPicker">
+            </div>
+
+            <div class="block">
+                <p>Background</p>
+                <input class="form-control" type="color" id="canvasColor" value="#FFFFFF">
+            </div>
+
+            <div class="block">
+                <p>Font Size</p>
+                <select id="fontPicker">
+                    <option value="1">1px</option>
+                    <option value="2">2px</option>
+                    <option value="3">3px</option>
+                    <option value="4">4px</option>
+                    <option value="5">5px</option>
+                    <option value="6">6px</option>
+                    <option value="7">7px</option>
+                    <option value="8">8px</option>
+                    <option value="9">9px</option>
+                    <option value="10">10px</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+
+        <div class="bottom">
+            <button class="clear" id="clearButton">Clear</button>
+            <button class="save" id="saveButton">Save and Download</button>
+            <button class="retrieve" id="retrieveButton">Retrieve Saved Signature</button>
+        </div>
+    </div>
+    <script src="java/script.js"></script>
+</body>
+
+</html>
